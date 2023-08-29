@@ -1,0 +1,31 @@
+.me {
+    position: absolute;
+    color: white;
+    width: 100%;
+}
+
+.me__content {
+    margin: 100px 100px;
+    display: flex;
+}
+
+.me__image {
+    border-radius: 15px;
+    height: 500px;
+    width: auto;
+}
+
+.me__text {
+    margin-left: 100px;
+}
+
+.me__title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.me__lore {
+    opacity: 0.7;
+    font-size: 20px;
+    margin-top: 25px;
+}

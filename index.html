@@ -5,16 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xflyiwnl</title>
     <link href="./styles/common.css" rel="stylesheet"/>
+    <link href="./styles/header.css" rel="stylesheet"/>
+    <link href="./styles/portfolio.css" rel="stylesheet"/>
+    <link href="./styles/me.css" rel="stylesheet"/>
+    <link href="./styles/page.css" rel="stylesheet"/>
     <link href="./styles/particles.css" rel="stylesheet"/>
-    <link href="./styles/adaptive.css" rel="stylesheet"/>
+    <link href="./styles/adaptive/adaptive.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body> 
 
+    <!--
+        particle js, background geometry effect
+    -->
     <div id="particles-js">
-        <div class="page">
+        <!--
+            header ?
+        -->
+        <div class="header">
+            <div class="header__content">
+                <a class="header__item active" id="main__header" onclick="showMain()">
+                    ГЛАВНАЯ
+                </a>
+                <a class="header__item" id="portfolio__header" onclick="showPortfolio()">
+                    ПОРТФОЛИО
+                </a>
+                <a class="header__item" id="me__header" onclick="showMe()">
+                    О СЕБЕ
+                </a>
+            </div>
+        </div>
+        <!--
+            main page 
+        -->
+        <div class="main" id="main">
             <div class="info">
                 <div class="info__logo">
                     <img src="./assets/logo.jpeg" alt="logo">
@@ -28,18 +54,110 @@
                         Java разработчик, почти fullstack
                     </div>
                     <div class="info__links">
-                        <a class="info__link">
+                        <a class="info__link" href="https://vk.com/xflyiwnl">
                             <img src="./assets/links/vk.png" alt="vk" class="white">
                         </a>
-                        <a class="info__link">
+                        <a class="info__link" onclick="copyTelegram()">
                             <img src="./assets/links/telegram.png" alt="telegram" class="white">
                         </a>
-                        <a class="info__link">
+                        <a class="info__link" onclick="copyDiscord()">
                             <img src="./assets/links/discord.png" alt="discord" class="white">
                         </a>
-                        <a class="info__link">
+                        <a class="info__link" href="https://github.com/xflyiwnl">
                             <img src="./assets/links/github.png" alt="github" class="white">
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+            portfolio page 
+        -->
+        <div class="portfolio hide" id="portfolio">
+            <div class="portfolio__content">
+                <div class="portfolio__item">
+                    <img src="./assets/logo.jpeg" alt="logo" class="portfolio__image">
+                    <div class="portfolio__text">
+                        <a class="portfolio__name" href="https://github.com/xflyiwnl/Cities">
+                            be Cities!
+                        </a>
+                        <div class="portfolio__lore">
+                            Огромная альтернатива плагину Towny с упором на RP. Присутствует работа с WiringAPI и ColorfulGUI.
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="./assets/logo.jpeg" alt="logo" class="portfolio__image">
+                    <div class="portfolio__text">
+                        <a class="portfolio__name" href="https://github.com/xflyiwnl/iridbot">
+                            Бот Вконтакте
+                        </a>
+                        <div class="portfolio__lore">
+                            Бот для вконтакте, в котором можно легко создавать команды наследованием готовых классов, а также установкой их ключа.
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="./assets/logo.jpeg" alt="logo" class="portfolio__image">
+                    <div class="portfolio__text">
+                        <a class="portfolio__name" href="https://github.com/xflyiwnl/restapi">
+                            RESTful на Spring
+                        </a>
+                        <div class="portfolio__lore">
+                            Для общения между сервером через методы GET, POST, DELETE, PUT. Ответы поступают ввиде JSON.
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="./assets/logo.jpeg" alt="logo" class="portfolio__image">
+                    <div class="portfolio__text">
+                        <a class="portfolio__name" href="https://github.com/xflyiwnl/WiringAPI">
+                            WiringAPI
+                        </a>
+                        <div class="portfolio__lore">
+                            API для работы с базой данных. Преобразыватель SQL запросов, в подготовленные заранее методы.
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="./assets/logo.jpeg" alt="logo" class="portfolio__image">
+                    <div class="portfolio__text">
+                        <a class="portfolio__name" href="https://github.com/xflyiwnl/ColorfulGUI">
+                            ColorfulGUI
+                        </a>
+                        <div class="portfolio__lore">
+                            API для создания и настройки менюшек. Подходит для создания многостраничных или одностраничных меню.
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <img src="./assets/logo.jpeg" alt="logo" class="portfolio__image">
+                    <div class="portfolio__text">
+                        <a class="portfolio__name" href="https://github.com/xflyiwnl/">
+                            Больше...
+                        </a>
+                        <div class="portfolio__lore">
+                            Я обычно не заливаю свои плагины на общий доступ, больше работ хранятя у меня на компе....
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="me hide" id="me">
+            <div class="me__content">
+                <img src="./assets/logo.jpeg" alt="logo" class="me__image">
+                <div class="me__text">
+                    <div class="me__title">
+                        Хто я?
+                    </div>
+                    <div class="me__lore">
+                        Если коротко о себе, то меня зовут Yerassyl и мне 9 лет (7 января). 
+                        Гражданин Республики Казахстан и постоянный житель яблочного города Алма-ата. 
+                        <br><br>Свой путь в мир разработки серверов Minecraft начал 5 лет назад со сборки обычного школо-сервера, где продаётся всякий шлак по типу креатива, админок и прочего. 
+                        Затем, спустя 2 года начал изучать Java для написания серверных плагинов на базе Spigot API. И последние 3 года прохожу путь его изучения. Всё вырабатывалось методом проб и ошибок.
+                        <br><br>Потом, как только понял, что я смогу написать средне-сложные плагины, начал изучать разработку Web-приложений.
+                        Делал сайт на голом html, css с бэком на Java (Spring) с использованием Thymeleaf. После, начал изучать React и полезные инструменты к нему SASS, MUI и (я забыл). И стал писать RESTful для связки фронта с бэкендом.
+                        <br><br>Последние 2-3 месяцев начал пробовать себя в 3D модельках для Minecraft (Blockbench). Вроде как получается всё ОК или не ОК. Сделал модельку танка (Тигр) и самолёта (Мессершмидт, вроде так пишется).
                     </div>
                 </div>
             </div>
@@ -48,6 +166,8 @@
 
     <script src="./js/particles.js"></script>
     <script src="./js/background.js"></script>
+    <script src="./js/pages.js"></script>
+    <script src="./js/links.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </body>
