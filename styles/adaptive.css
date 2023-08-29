@@ -1,0 +1,136 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .info {
+        width: 70%;
+        transition: 0.5s ease-in-out;
+    }
+    .info__content {
+        margin-left: 20px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__name {
+        font-size: 20px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__desc {
+        font-size: 12px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__logo img {
+        height: 30vh;
+        transition: 0.5s ease-in-out;
+    }
+    .info__flag {
+        height: 15px;
+        transition: 0.5s ease-in-out;
+    }
+    .white {
+        height: 25px;
+        width: 25px;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .info {
+        width: 60%;
+        transition: 0.5s ease-in-out;
+    }
+    .info__content {
+        margin-left: 50px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__name {
+        font-size: 30px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__desc {
+        font-size: 18px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__logo img {
+        height: 45vh;
+        transition: 0.5s ease-in-out;
+    }
+    .info__flag {
+        height: 25px;
+        transition: 0.5s ease-in-out;
+    }
+    .white {
+        height: 35px;
+        width: 35px;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .info {
+        width: 60%;
+        transition: 0.5s ease-in-out;
+    }
+    .info__content {
+        margin-left: 50px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__name {
+        font-size: 30px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__desc {
+        font-size: 18px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__logo img {
+        height: 50vh;
+        transition: 0.5s ease-in-out;
+    }
+    .info__flag {
+        height: 25px;
+        transition: 0.5s ease-in-out;
+    }
+    .white {
+        height: 35px;
+        width: 35px;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .info {
+        width: 45%;
+        transition: 0.5s ease-in-out;
+    }
+    .info__content {
+        margin-left: 50px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__name {
+        font-size: 35px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__desc {
+        font-size: 20px;
+        transition: 0.5s ease-in-out;
+    }
+    .info__logo img {
+        height: 50vh;
+        transition: 0.5s ease-in-out;
+    }
+    .info__flag {
+        height: 25px;
+        transition: 0.5s ease-in-out;
+    }
+    .white {
+        height: 40px;
+        width: 40px;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
